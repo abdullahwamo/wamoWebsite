@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className='bg-white dark:bg-[#121212] border-gray-200 shadow-md'>
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-12 lg:px-4'>
+      <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-8 lg:px-4'>
         {/* Logo */}
         <Link href='/' onClick={() => setActiveLink('')} className='flex items-center space-x-3'>
           <Image
