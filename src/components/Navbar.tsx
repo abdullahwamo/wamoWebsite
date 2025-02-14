@@ -16,7 +16,7 @@ export const Navbar: React.FC = () => {
   if (!isMounted) return null;
 
   return (
-    <nav className='bg-white dark:bg-[#121212] border-gray-200 shadow-md'>
+    <nav aria-label='mode-switcher' className='bg-white dark:bg-[#121212] border-gray-200 shadow-md'>
       <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-2 md:px-8 lg:px-4'>
         {/* Logo */}
         <Link href='/' onClick={() => setActiveLink('')} className='flex items-center space-x-3'>
@@ -73,6 +73,7 @@ export const Navbar: React.FC = () => {
         <button
           onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           type='button'
+          aria-label='button-mode'
           className='md:hidden p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200'
         >
           {isMobileMenuOpen ? (
@@ -109,6 +110,7 @@ export const Navbar: React.FC = () => {
               <li key={item}>
                 <Link
                   href={`/${item.toLowerCase()}`}
+                  aria-label='navigation-link'
                   className={`block text-blue-700 hover:text-blue-500 transition ${
                     activeLink === item ? 'font-semibold' : ''
                   }`}

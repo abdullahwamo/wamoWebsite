@@ -1,106 +1,87 @@
+export const heroSlidesData = [
+  {
+    image: '/images/innovation.jpg',
+    title: 'Pioneering Digital Excellence',
+    quote:
+      "At WAMO LABS, we turn visionary ideas into groundbreaking digital experiences. Whether you're a startup or an industry leader, our cutting-edge technology and tailored strategies keep you at the forefront of innovation. Let’s redefine success together!",
+  },
+  {
+    image: '/images/teamwork.jpg',
+    title: 'Collaboration Fuels Success',
+    quote:
+      'We believe in the power of teamwork. At WAMO LABS, our diverse and passionate team works together to push the boundaries of creativity and technology. We foster a culture of collaboration, learning, and innovation, making it an inspiring place to grow.',
+  },
+  {
+    image: '/images/future.jpg',
+    title: 'Engineering Tomorrow',
+    quote:
+      "With WAMO LABS, you're not just adopting new technology—you’re shaping the future. Our commitment to top-tier solutions, emerging trends, and customer-centric innovation ensures that every project we deliver leaves a lasting impact. Together, we build what’s next!",
+  },
+];
+
 export const serviceData = [
-  { title: 'Web Development', desc: 'Modern, responsive web applications tailored to your needs.' },
-  { title: 'Mobile Apps', desc: 'We build cross-platform mobile applications with stunning UI.' },
-  { title: 'Cloud Solutions', desc: 'Scalable cloud architectures with seamless integrations.' },
-  { title: 'Web Development', desc: 'Modern, responsive web applications tailored to your needs.' },
-  { title: 'Mobile Apps', desc: 'We build cross-platform mobile applications with stunning UI.' },
-  { title: 'Cloud Solutions', desc: 'Scalable cloud architectures with seamless integrations.' },
+  { title: 'Custom Web Solutions', desc: 'Bespoke, high-performance web applications built to scale.' },
+  { title: 'Mobile Development', desc: 'Feature-rich mobile apps with seamless user experiences.' },
+  { title: 'Cloud Architecture', desc: 'Optimized cloud infrastructure for scalability and security.' },
+  { title: 'E-commerce Development', desc: 'Custom online stores with intuitive shopping experiences.' },
+  { title: 'AI Integration', desc: 'Enhance your business with AI-driven solutions and automation.' },
+  { title: 'UI/UX Design', desc: 'Visually stunning and user-friendly designs that elevate engagement.' },
 ];
 
 export const testimonials = [
   {
-    name: 'Emily',
+    name: 'Michael',
     image: '/images/men.png',
-    text: 'I have been using Pagedone for several months now, and it has made my life a lot easier...',
+    text: 'Using Pagedone has revolutionized the way I manage my workflow—efficient and intuitive!',
   },
   {
-    name: 'Ethan',
+    name: 'Sophia',
     image: '/images/women.png',
-    text: 'The platform’s intuitive interface and ease of use have allowed me to manage my finances more effectively...',
+    text: 'The simplicity and automation features of this platform have significantly boosted my productivity!',
   },
   {
-    name: 'Olivia',
+    name: 'Daniel',
     image: '/images/men.png',
-    text: 'I particularly like the product’s auto-tracking feature, which has saved me a lot of time and effort...',
+    text: 'I love how the tracking tools help me stay on top of my projects effortlessly!',
   },
 ];
 
 export const teamData = [
   {
-    name: 'Harsh Patel',
-    role: 'Co-Founder & CEO',
+    name: 'Jason Carter',
+    role: 'Founder & CEO',
     imageSrc: '/images/men.png',
-    description: 'I am the co-founder of Pagedone and we’ve pushed our limit so far to make it successful.',
+    description: 'Leading Pagedone towards innovation and success with a vision for the future.',
     socialLinks: [
       { url: '#', icon: '/images/profileicon.png' },
       { url: '#', icon: '/images/profileicon.png' },
     ],
   },
   {
-    name: 'Alexa Kimberly',
-    role: 'Lead Designer',
+    name: 'Elena Martinez',
+    role: 'Creative Director',
     imageSrc: '/images/women.png',
-    description: 'I’ve been the lead designer for Pagedone since the beginning and enjoyed every bit.',
+    description: 'Transforming ideas into visually stunning designs that drive engagement.',
     socialLinks: [
       { url: '#', icon: '/images/profileicon.png' },
       { url: '#', icon: '/images/profileicon.png' },
     ],
   },
   {
-    name: 'John Doe',
-    role: 'Marketing Lead',
+    name: 'Brandon Lee',
+    role: 'Tech Lead',
     imageSrc: '/images/men.png',
-    description: 'Helping brands scale with creative marketing strategies.',
+    description: 'Bridging innovation and technology to build scalable solutions.',
     socialLinks: [
       { url: '#', icon: '/images/profileicon.png' },
       { url: '#', icon: '/images/profileicon.png' },
     ],
   },
   {
-    name: 'Sophia Williams',
+    name: 'Mia Thompson',
     role: 'Product Manager',
     imageSrc: '/images/women.png',
-    description: 'Ensuring seamless user experience and product innovation.',
-    socialLinks: [
-      { url: '#', icon: '/images/profileicon.png' },
-      { url: '#', icon: '/images/profileicon.png' },
-    ],
-  },
-  {
-    name: 'Harsh Patel',
-    role: 'Co-Founder & CEO',
-    imageSrc: '/images/men.png',
-    description: 'I am the co-founder of Pagedone and we’ve pushed our limit so far to make it successful.',
-    socialLinks: [
-      { url: '#', icon: '/images/profileicon.png' },
-      { url: '#', icon: '/images/profileicon.png' },
-    ],
-  },
-  {
-    name: 'Alexa Kimberly',
-    role: 'Lead Designer',
-    imageSrc: '/images/women.png',
-    description: 'I’ve been the lead designer for Pagedone since the beginning and enjoyed every bit.',
-    socialLinks: [
-      { url: '#', icon: '/images/profileicon.png' },
-      { url: '#', icon: '/images/profileicon.png' },
-    ],
-  },
-  {
-    name: 'John Doe',
-    role: 'Marketing Lead',
-    imageSrc: '/images/men.png',
-    description: 'Helping brands scale with creative marketing strategies.',
-    socialLinks: [
-      { url: '#', icon: '/images/profileicon.png' },
-      { url: '#', icon: '/images/profileicon.png' },
-    ],
-  },
-  {
-    name: 'Sophia Williams',
-    role: 'Product Manager',
-    imageSrc: '/images/women.png',
-    description: 'Ensuring seamless user experience and product innovation.',
+    description: 'Ensuring seamless product experiences with a customer-first approach.',
     socialLinks: [
       { url: '#', icon: '/images/profileicon.png' },
       { url: '#', icon: '/images/profileicon.png' },
@@ -110,112 +91,150 @@ export const teamData = [
 
 export const companyGrowthData = [
   {
-    percentage: 240,
-    title: 'Company Growth',
-    description:
-      'Company remarkable growth journey as we continually innovate and drive towards new heights of success.',
+    percentage: 300,
+    title: 'Rapid Expansion',
+    description: 'Expanding our reach and impact globally through technology-driven solutions.',
   },
   {
-    percentage: 175,
-    title: 'Company growth',
-    description: 'Our very talented team members are the powerhouse of pagedone and pillars of our success.',
+    percentage: 200,
+    title: 'Team Growth',
+    description: 'Our passionate and skilled team continues to grow, driving innovation forward.',
   },
   {
-    percentage: 625,
-    title: 'Projects Completed',
-    description: 'We have accomplished more than 625 projects worldwide and we are still counting many more.',
+    percentage: 700,
+    title: 'Projects Delivered',
+    description: 'Over 700 successful projects completed, delivering exceptional results for our clients.',
   },
 ];
 
 export const jobs = [
   {
-    title: 'Full-Stack Developer',
-    location: 'Remote Only',
-    description:
-      'We are seeking a skilled Full-Stack Developer experienced in building scalable web applications using modern frameworks.',
-    responsibilities:
-      'Develop and maintain web applications, collaborate with cross-functional teams, and write clean, efficient code.',
-    requirements: 'Experience with React, Node.js, and database management. Familiarity with cloud services is a plus.',
-    salary: '$80k - $120k per year',
+    title: 'Frontend Engineer',
+    location: 'Remote',
+    description: 'Seeking a Frontend Engineer with expertise in modern frameworks like React and Vue.',
+    responsibilities: 'Develop responsive UIs, collaborate with designers, and optimize web performance.',
+    requirements: 'Experience with JavaScript, CSS frameworks, and API integration.',
+    salary: '$85k - $120k per year',
   },
   {
-    title: 'Junior Graphic Designer',
-    location: 'San Francisco, USA',
-    description:
-      'Join our creative team as a Junior Graphic Designer and help bring ideas to life through compelling visuals.',
-    responsibilities:
-      'Assist in creating marketing materials, digital assets, and branding elements across various media.',
-    requirements: 'Basic knowledge of Adobe Creative Suite, strong creative skills, and a willingness to learn.',
-    salary: '$45k - $60k per year',
+    title: 'UX Researcher',
+    location: 'New York, USA',
+    description: 'Conduct user research to enhance product experiences and usability.',
+    responsibilities: 'Gather insights, analyze user behavior, and provide design recommendations.',
+    requirements: 'Experience with user testing, analytics, and prototyping tools.',
+    salary: '$65k - $90k per year',
   },
   {
-    title: 'Lead Software Engineer - Data',
-    location: 'Australia',
-    description:
-      'We are looking for a Lead Software Engineer to drive our data initiatives and oversee end-to-end development of data solutions.',
-    responsibilities:
-      'Lead a team to design data pipelines, ensure data quality, and implement scalable data solutions.',
-    requirements:
-      'Proven experience in data engineering, strong leadership skills, and proficiency with big data technologies.',
-    salary: '$100k - $150k per year',
-  },
-  {
-    title: 'Senior Digital Designer',
-    location: 'Remote Only',
-    description:
-      'As a Senior Digital Designer, you will be responsible for creating stunning digital content that aligns with our brand identity.',
-    responsibilities:
-      'Develop visual concepts, produce high-quality designs, and work closely with marketing teams to deliver engaging content.',
-    requirements: 'A strong portfolio, excellent command of design software, and attention to detail.',
-    salary: '$70k - $100k per year',
-  },
-  {
-    title: 'SEM Specialist',
-    location: 'Remote Only',
-    description: 'We need an SEM Specialist to optimize our online advertising campaigns and drive measurable results.',
-    responsibilities:
-      'Manage SEM campaigns, analyze performance metrics, and optimize ads for better conversion rates.',
-    requirements:
-      'Experience in SEM, strong analytical skills, and the ability to manage multiple projects simultaneously.',
-    salary: '$60k - $90k per year',
+    title: 'Senior Backend Engineer',
+    location: 'Canada',
+    description: 'Looking for a skilled backend engineer to build and maintain scalable APIs.',
+    responsibilities: 'Develop backend services, optimize databases, and ensure high performance.',
+    requirements: 'Experience with Node.js, Python, or Go, and cloud-based services.',
+    salary: '$110k - $150k per year',
   },
 ];
 
 export const projectsData = [
   {
-    title: 'Turing',
+    title: 'Neural Sync',
     image: '/images/smart.jpg',
-    tags: ['UX/UI', 'Research', 'Development', 'Deployment', 'Testing'],
-    industry: 'Finance',
+    tags: ['AI', 'Data Analysis', 'Machine Learning', 'Development'],
+    industry: 'Healthcare',
   },
   {
-    title: 'Upwork',
+    title: 'EcoTrack',
     image: '/images/future.jpg',
-    tags: ['UX/UI', 'Research', 'Development', 'Deployment', 'Testing'],
-    industry: 'Oil, Gas & Minerals',
+    tags: ['Sustainability', 'Analytics', 'IoT', 'Data Science'],
+    industry: 'Environmental Technology',
   },
   {
-    title: 'Turing',
+    title: 'FinHub',
     image: '/images/smart.jpg',
-    tags: ['UX/UI', 'Research', 'Development', 'Deployment', 'Testing'],
-    industry: 'Finance',
+    tags: ['Finance', 'Automation', 'Security', 'Blockchain'],
+    industry: 'Financial Services',
   },
   {
-    title: 'Upwork',
+    title: 'SupplySync',
     image: '/images/future.jpg',
-    tags: ['UX/UI', 'Research', 'Development', 'Deployment', 'Testing'],
-    industry: 'Oil, Gas & Minerals',
+    tags: ['Logistics', 'AI', 'Automation', 'Optimization'],
+    industry: 'Supply Chain Management',
+  },
+];
+
+export const slidesHeroData = [
+  {
+    image: '/images/innovation.jpg',
+    title: 'Innovating Beyond Limits',
+    quote:
+      'At WAMO LABS, we transform visionary ideas into cutting-edge digital experiences. From AI-driven applications to full-stack solutions, our expertise ensures businesses stay ahead in a rapidly evolving world. Let’s build the future together!',
   },
   {
-    title: 'Turing',
-    image: '/images/smart.jpg',
-    tags: ['UX/UI', 'Research', 'Development', 'Deployment', 'Testing'],
-    industry: 'Finance',
+    image: '/images/teamwork.jpg',
+    title: 'A Culture of Excellence',
+    quote:
+      'At WAMO LABS, we thrive on collaboration, creativity, and pushing boundaries. Our dynamic team is dedicated to crafting technological solutions that drive innovation, ensuring every member has the tools and support to excel.',
   },
   {
-    title: 'Upwork',
     image: '/images/future.jpg',
-    tags: ['UX/UI', 'Research', 'Development', 'Deployment', 'Testing'],
-    industry: 'Oil, Gas & Minerals',
+    title: 'Shaping the Future of Technology',
+    quote:
+      'We are more than just a tech company—we are architects of the digital age. By harnessing AI, cloud computing, and full-stack development, WAMO LABS delivers robust, scalable solutions that create a lasting impact on industries worldwide.',
+  },
+];
+
+export const features = [
+  {
+    title: 'End-to-End Development Expertise',
+    description:
+      'We work across the full technology stack, from frontend to backend, ensuring seamless and high-performance solutions.',
+    listItems: [
+      'Frontend & Backend Development',
+      'API Design & Integrations',
+      'Cloud & Server Management',
+      'Full DevOps Support',
+      'Performance Optimization',
+    ],
+    imageSrc: '/images/innovation.jpg',
+    bottom: '-0px',
+    zIndex: 1,
+    marginTop: '10px',
+    marginLeft: '0px',
+    marginRight: '0px',
+  },
+  {
+    title: 'Comprehensive AI Solutions',
+    description:
+      'We implement AI-driven solutions, from machine learning models to automation tools, to enhance efficiency and decision-making.',
+    listItems: [
+      'AI-Powered Automation',
+      'Natural Language Processing',
+      'Predictive Analytics',
+      'AI Model Deployment',
+      'AI for Web & Mobile',
+    ],
+    imageSrc: '/images/teamwork.jpg',
+    bottom: '-200px',
+    zIndex: 0,
+    marginTop: '50px',
+    marginLeft: '15px',
+    marginRight: '15px',
+  },
+  {
+    title: 'From Idea to MVP',
+    description:
+      'We turn ideas into reality, offering support at every stage—from concept validation to final deployment.',
+    listItems: [
+      'Project Planning & Strategy',
+      'UX/UI Design & Prototyping',
+      'Agile Development Process',
+      'Testing & Quality Assurance',
+      'Launch & Post-Launch Support',
+    ],
+    imageSrc: '/images/future.jpg',
+    bottom: '-200px',
+    marginTop: '50px',
+    zIndex: -1,
+    marginLeft: '30px',
+    marginRight: '30px',
   },
 ];

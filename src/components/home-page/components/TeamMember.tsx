@@ -15,7 +15,7 @@ export const TeamMember: React.FC<TeamMemberProps> = ({ name, role, imageSrc, so
         />
       </div>
       <div className='text-center mt-4'>
-        <h6 className='text-lg text-gray-900 font-semibold dark:text-white'>{name}</h6>
+        <h5 className='text-lg text-gray-900 font-semibold dark:text-white'>{name}</h5>
         <span className='text-sm text-gray-500'>{role}</span>
       </div>
       <div className='flex items-center gap-4 mt-4'>
