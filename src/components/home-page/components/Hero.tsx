@@ -35,9 +35,8 @@ export const Hero: React.FC = () => {
         effect={'fade'}
         direction={'vertical'}
         autoplay={{ delay: 3000 }}
-        pagination={{ clickable: true }}
         className='w-full h-full'
-        navigation={true}
+        navigation={false}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
