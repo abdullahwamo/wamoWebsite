@@ -4,20 +4,36 @@ import { TeamMember } from './TeamMember';
 import { teamData } from '@/utils/constant';
 
 export const TeamSection: React.FC = () => {
+  const useIsSmallScreen = (breakpoint = 768) => {
+    const [isSmall, setIsSmall] = useState(false);
+
+    useEffect(() => {
+      const checkScreenSize = () => setIsSmall(window.innerWidth < breakpoint);
+
+      checkScreenSize();
+      window.addEventListener('resize', checkScreenSize);
+
+      return () => window.removeEventListener('resize', checkScreenSize);
+    }, [breakpoint]);
+
+    return isSmall;
+  };
+  const isSmallScreen = useIsSmallScreen();
+
+  const valueForEndX = isSmallScreen ? -60 : 40;
   const sectionRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: sectionRef, offset: ['start end', 'end end'] });
 
-  const totalProfiles = teamData.length; // 8
+  const totalProfiles = teamData.length; //
   const profileWidth = 40;
   const gapBetweenProfiles = 0;
 
-  const startX = 125;
-  const endX = startX - (totalProfiles - 1) * (profileWidth + gapBetweenProfiles);
+  const startX = 50;
+  const endX = valueForEndX + (startX - (totalProfiles - 1) * (profileWidth + gapBetweenProfiles));
 
-  console.log(startX, endX);
   const xScroll = useTransform(scrollYProgress, [0, 1], [`${startX}%`, `${endX}%`]);
-  const xSmooth = useSpring(xScroll, { stiffness: 100, damping: 30 });
+  const xSmooth = useSpring(xScroll, { stiffness: 100, damping: 40 });
 
   const [isScrollingStopped, setIsScrollingStopped] = useState(false);
 

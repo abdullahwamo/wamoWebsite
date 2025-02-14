@@ -1,54 +1,31 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
-import { EffectFade, Autoplay, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-import { heroSlidesData } from '@/utils/constant';
+import React from 'react';
 
-export const Hero: React.FC = () => {
+const Hero = () => {
   return (
-    <section className='relative w-full h-screen text-white'>
-      {/* Prevent Swiper from blocking scrolling */}
-      <div className='absolute inset-0 w-full h-full overflow-auto'>
-        <Swiper
-          modules={[EffectFade, Autoplay, Pagination]}
-          effect={'fade'}
-          autoplay={{ delay: 3000 }}
-          className='w-full h-full'
-          navigation={false}
-          touchMoveStopPropagation={false}
-          allowTouchMove={true} // Allow scrolling on mobile
-          direction={'horizontal'} // Changed to horizontal
-        >
-          {heroSlidesData.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className='absolute inset-0 w-full h-full'>
-                <Image
-                  src={slide.image}
-                  alt='Hero Background'
-                  layout='fill'
-                  objectFit='cover'
-                  className='absolute inset-0 w-full h-full brightness-50'
-                />
-              </div>
-              <div className='absolute inset-0 flex flex-col items-center justify-center text-center px-6 mb-20 md:pb-0'>
-                <h1 className='text-2xl md:text-5xl font-bold mb-4 md:mb-8 pt-2 md:pt-0 text-orange-500'>
-                  {slide.title}
-                </h1>
-                <h2 className='text-xl font-bold mb-6 w-[80%]'>{slide.quote}</h2>
-                <a
-                  href='#contact'
-                  className='mt-6 px-6 py-3 bg-blue-950 text-white font-semibold rounded-lg shadow-md hover:bg-[#0073b1] transition duration-300'
-                >
-                  Get Started
-                </a>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+    <div className='flex flex-col w-full h-full bg-white dark:bg-[#121212]'>
+      <div className='relative w-full h-screen z-10'>
+        <Image
+          src='/images/wiremesh.jpg'
+          alt='Background'
+          layout='fill'
+          objectFit='cover'
+          className='relative inset-0'
+        />
+
+        <div className='relative bg-transparent inset-0 bg-black bg-opacity-50 flex'>
+          <div className='w-full text-center px-6 mx-24 my-48 '>
+            <h1 className='text-orange-500 text-3xl font-bold w-full'>The key to Solutions</h1>
+            <p className='text-white mt-4 w-full'>
+              Get a chance to work with a global network of 800+ members, with offices in Malaysia, USA, Australia,
+              Germany, and Pakistan. Using cutting-edge technologies, we help businesses move one step closer to digital
+              transformation.
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
+
+export default Hero;

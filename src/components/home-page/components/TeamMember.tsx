@@ -6,13 +6,7 @@ export const TeamMember: React.FC<TeamMemberProps> = ({ name, role, imageSrc, so
   return (
     <div className='p-6 flex flex-col items-center w-[300px]'>
       <div className='w-48 h-64'>
-        <Image
-          height={256}
-          width={150}
-          src={imageSrc}
-          alt={name}
-          className='rounded-full h-full object-cover mx-auto'
-        />
+        <Image height={256} width={230} src={imageSrc} alt={name} className='h-full object-cover mx-auto' />
       </div>
       <div className='text-center mt-4'>
         <h5 className='text-lg text-gray-900 font-semibold dark:text-white'>{name}</h5>
