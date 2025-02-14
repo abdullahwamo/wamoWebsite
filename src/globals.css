@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #0073b1; /* LinkedIn Blue */
+  --secondary: #005682; /* Darker Shade */
+  --accent: #e1e9ee; /* Light Accent */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #00a0dc;
+    --secondary: #0073b1;
+    --accent: #2b3a42;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', Arial, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .hover-bg-secondary {
+    transition: background 0.3s ease;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+
+/* 
+About Section CSS
+*/
