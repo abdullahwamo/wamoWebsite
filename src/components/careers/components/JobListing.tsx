@@ -27,7 +27,7 @@ export const JobListing: React.FC = () => {
             className='flex flex-col sm:flex-row sm:items-center justify-between py-4 rounded-xl border-gray-200 dark:hover:bg-black hover:bg-gray-50 transition'
           >
             <div className='flex flex-col sm:flex-row sm:items-center gap-2 mx-2'>
-              <span className='text-lg font-semibold text-blue-500 '>{job.title}</span>
+              <span className='text-lg font-semibold text-orange-500 '>{job.title}</span>
               <span className='text-gray-600'>{job.location}</span>
             </div>
             <button
