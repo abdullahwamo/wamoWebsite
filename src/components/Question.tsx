@@ -8,7 +8,7 @@ const Question = () => {
         <div className='text-3xl my-2 px-8 md:px-4 items-center justify-center w-full '>
           Do you have any question for us?
         </div>
-        <div className='flex flex-col md:flex-row items-center justify-center w-full'>
+        <div className='flex flex-col mb-2 md:flex-row items-center justify-center w-full'>
           <span className='text-2xl my-2 md:my-0 '>Reach us Out </span>
           <span className='hidden md:visible'>{'->'}</span>
           <Link className='ml-2' href='/contact'>
